@@ -22,7 +22,7 @@ ui <- fluidPage(theme = shinytheme("readable"), includeCSS('www/style.css'),
       actionButton('escalate', "Escalate Selected Trades",
                    style = "background-color: Firebrick;
                             color:  white;"), hr(),
-      h3(textOutput("counter"), style = "padding: 5px; color: rgb(127, 129, 130); border: 3px solid Firebrick;")
+      h3(textOutput("counter"), style = "padding: 5px; color: rgb(127, 129, 130); border: 3px solid #b0bed; border-radius: 15px;")
     ),
     
     mainPanel(
