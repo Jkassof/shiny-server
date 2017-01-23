@@ -1,0 +1,72 @@
+@import url("//fonts.googleapis.com/css?family=Roboto:400,700");
+
+.h2 {
+  font-family: 'Roboto';
+  color: #366A86;
+}
+
+.h3, h3 {
+  font-family: 'Roboto';
+  color: #366A86;
+}
+
+body {
+  /*background-color: #C5C6C4;*/
+  background-color: rgb(127, 129, 130);
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #366A86;
+}
+
+.btn {
+  font-family: 'Roboto';
+  width: 250px;
+  left:50%;
+}
+
+.btn-default {
+    color: #366A86;
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+th {
+    background-color: #fff;
+}
+
+.dataTable.no-footer {
+  border:1px solid #111;
+}
+
+@media only screen and (min-width: 768px) {
+    form.well {
+        position: fixed;
+        width: 330px;
+    }
+}
+
+hr {
+  border-color: #366A86;
+}
+
+.well {
+  background-color: Linen;
+}
+
+.alert-success {
+  background-color: Forestgreen;
+}
+
+.alert-warning {
+  background-color: Firebrick;
+}
+/* Selected rows/cells 
+table.dataTable tbody .selected,
+table.dataTable .selected td.sorting_1,
+table.dataTable .selected td.sorting_2,
+table.dataTable .selected td.sorting_3,
+div.DTS tbody .even.selected,
+.table-striped tbody>.selected:nth-child(odd)>td,
+.table-striped tbody>.selected:nth-child(even)>td {
+  background-color: #b0bed9;
+}*/

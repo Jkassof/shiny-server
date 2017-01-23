@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nlibrary(shinythemes)\nlibrary(shinyBS)\nlibrary(shinyjs)\nlibrary(DT)\n\n# Define UI for application that draws a histogram\nui <- fluidPage(theme = shinytheme(\"readable\"), includeCSS('www/style.css'),\n  useShinyjs(),              \n  titlePanel(img(src = 'rock_logo.png', height = 50), windowTitle = \"Daily Blotter\"),\n  hr(),\n\n  sidebarLayout(\n    \n    sidebarPanel(style = \"text-align: center;\",\n      h3(\"Daily Blotter Review\",  style = \"margin-top: 5px; size: 26px;\"),\n      uiOutput('select_button'),\n      hr(),\n      actionButton('confirm', \"Confirm Selected Trades\",\n                   style = \"background-color: ForestGreen;\n                            color: white;\"), hr(),\n      actionButton('escalate', \"Escalate Selected Trades\",\n                   style = \"background-color: Firebrick;\n                            color:  white;\"), hr(),\n      h3(textOutput(\"counter\"), style = \"padding: 5px; color: rgb(127, 129, 130); border: 3px solid Firebrick;\")\n    ),\n    \n    mainPanel(\n      shinyjs::hidden(\n        div(id = \"confirmation_box\",\n            wellPanel(style = \"background-color: ForestGreen;\",\n              h4(textOutput(\"statement\"), style = \"color: white;\"),\n              actionButton(\"confirm_confirm\", \"Yes, I'm sure\", style = \"margin-right: 30px; margin-bottom: 10px; background-color: Linen;\"),\n              actionButton(\"deny_confirm\", \"Let me go back and check\", style = \"background-color: Linen;\")\n            ))\n      ),\n      shinyjs::hidden(\n        div(id = \"escalation_box\",\n            wellPanel(style = \"background-color: Firebrick;\",\n                      h4(textOutput(\"escalate_statement\"), style = \"color: white;\"),\n                      actionButton(\"confirm_escalate\", \"Yes, I'm sure\", style = \"margin-right: 30px; margin-bottom: 10px; background-color: Linen;\"),\n                      actionButton(\"deny_escalate\", \"Let me go back and check\", style = \"background-color: Linen;\")\n            ))\n      ),\n      bsAlert('above_table'),\n      # textOutput('search'),\n      # h5(\"selected\"),\n      # textOutput('selected'),\n      # h5(\"filtered\"),\n      # textOutput('filtered'),\n      dataTableOutput('tbl')\n      )\n    )\n  )\n\n\n",
+    "created" : 1485057681062.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3277675264",
+    "id" : "CEED4C3",
+    "lastKnownWriteTime" : 1485124818,
+    "last_content_update" : 1485124818937,
+    "path" : "~/daily_blotter/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

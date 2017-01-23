@@ -1,0 +1,41 @@
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 2px 4px;
+  font-size: 90%;
+  font-family: monospace;
+}
+
+@keyframes fontbulger {
+  0%, 100% {
+    font-size: 48px;
+  }
+  50% {
+    font-size: 64px;
+  }
+}
+
+.present #bulge {
+   animation: fontbulger 4s infinite;
+}
+
+@keyframes goldie {
+  0%, 100% {color: inherit;}
+  50% {color: gold;}
+}
+
+.present #richer {
+  animation: goldie 2s infinite;
+}
+
+.present #richer2 {
+  animation: goldie 4s infinite;
+}
+
+#ing.present .positioning {
+    -webkit-transform: translateX(500px);
+    -moz-transform:    translateX(500px);
+    -ms-transform:     translateX(500px);
+    -o-transform:      translateX(500px);
+    transform:         translateX(500px);
+}

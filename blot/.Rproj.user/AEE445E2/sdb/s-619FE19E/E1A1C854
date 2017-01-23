@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "@import url(\"//fonts.googleapis.com/css?family=Roboto:400,700\");\n\n.h2 {\n  font-family: 'Roboto';\n  color: #366A86;\n}\n\n.h3, h3 {\n  font-family: 'Roboto';\n  color: #366A86;\n}\n\nbody {\n  /*background-color: #C5C6C4;*/\n  background-color: rgb(127, 129, 130);\n  font-family: 'Roboto';\n  font-size: 16px;\n  color: #366A86;\n}\n\n.btn {\n  font-family: 'Roboto';\n  width: 250px;\n  left:50%;\n}\n\n.btn-default {\n    color: #366A86;\n    background-color: #ffffff;\n    border-color: #dddddd;\n}\n\nth {\n    background-color: #fff;\n}\n\n.dataTable.no-footer {\n  border:1px solid #111;\n}\n\n@media only screen and (min-width: 768px) {\n    form.well {\n        position: fixed;\n        width: 330px;\n    }\n}\n\nhr {\n  border-color: #366A86;\n}\n\n.well {\n  background-color: Linen;\n}\n\n.alert-success {\n  background-color: Forestgreen;\n}\n\n.alert-warning {\n  background-color: Firebrick;\n}\n/* Selected rows/cells \ntable.dataTable tbody .selected,\ntable.dataTable .selected td.sorting_1,\ntable.dataTable .selected td.sorting_2,\ntable.dataTable .selected td.sorting_3,\ndiv.DTS tbody .even.selected,\n.table-striped tbody>.selected:nth-child(odd)>td,\n.table-striped tbody>.selected:nth-child(even)>td {\n  background-color: #b0bed9;\n}*/\n",
+    "created" : 1485060063915.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3563826340",
+    "id" : "E1A1C854",
+    "lastKnownWriteTime" : 1485121916,
+    "last_content_update" : 1485121916696,
+    "path" : "~/daily_blotter/www/style.css",
+    "project_path" : "www/style.css",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}
