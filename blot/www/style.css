@@ -60,6 +60,10 @@ hr {
 .alert-warning {
   background-color: Firebrick;
 }
+
+#DataTables_Table_0 > thead > tr:nth-child(2) {
+  background-color: #fff;
+}
 /* Selected rows/cells 
 table.dataTable tbody .selected,
 table.dataTable .selected td.sorting_1,
